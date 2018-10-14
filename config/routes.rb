@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # STEP 1: A ROUTE triggers a controller action
   # verb "/urls" => "namespace/controllers#action"
-  namespace :ap do
-  get "/params_game" => "the_game#game"
-end
+  namespace :api do
+    get "/params_game" => "params#game"
+  end 
+end 
